@@ -1,4 +1,4 @@
-##我辛辛苦苦打了半天弄出来的脚本，有兴趣的自己看吧，我懒得解释了
+##Created by @CrazyHer
 echo "开始安装..."
 cd ~ &&\
 apt update &&\
