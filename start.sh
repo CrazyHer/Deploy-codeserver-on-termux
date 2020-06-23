@@ -1,7 +1,7 @@
 ##我辛辛苦苦打了半天弄出来的脚本，有兴趣的自己看吧，我懒得解释了
 echo "开始安装..."
 cd ~ &&\
-apt update&&apt full-upgrade &&\
+apt update &&\
 apt install clang vim curl wget git -y &&\
 echo "deb [trusted=yes arch=all] https://yadominjinta.github.io/files/ termux extras" >> $PREFIX/etc/apt/sources.list &&\
 pkg in atilo-cn -y &&\
