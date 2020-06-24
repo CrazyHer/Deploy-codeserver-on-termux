@@ -7,8 +7,9 @@ echo "deb [trusted=yes arch=all] https://yadominjinta.github.io/files/ termux ex
 apt update &&\
 apt install atilo-cn -y &&\
 atilo pull ubuntu &&\
-echo '请设置code-server的访问密码，回车确认：' &&\
-read code_password &&\
+echo '请设置code-server的访问密码，回车确认：' ||echo "安装失败！"
+read code_password 
+echo "设置成功，你的访问密码是 $code_password" &&\
 cat \
 "echo '继续进行安装...' &&\
 cd ~ &&\
