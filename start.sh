@@ -13,5 +13,5 @@ curl https://raw.githubusercontent.com/CrazyHer/Deploy-codeserver-on-termux/mast
 chmod 777 ~/.atilo/ubuntu/root/continue.sh &&\
 cp ~/.atilo/ubuntu/root/.bashrc ~/.atilo/ubuntu/root/.bashrcbak &&\
 echo '~/continue.sh'>> ~/.atilo/ubuntu/root/.bashrc &&\
-echo "现在请输入atilo run ubuntu 以进入ubuntu子系统继续安装" &&\
+echo "现在请输入atilo run ubuntu 以进入ubuntu子系统继续安装" ||\
 echo "安装失败！"

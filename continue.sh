@@ -1,7 +1,7 @@
 ##Created by @CrazyHer
 echo '继续进行安装...' &&\
 cd ~ &&\
-apt update && apt install wget curl vim clang gcc net-tools python -y &&\
+apt update && apt install wget curl vim clang c++ net-tools -y &&\
 curl -sL https://deb.nodesource.com/setup_12.x | bash - &&\
 apt-get install -y nodejs &&\
 npm install -g yarn &&\
