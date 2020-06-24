@@ -2,7 +2,7 @@
 echo "开始安装..."
 cd ~ &&\
 apt update &&\
-apt install clang vim curl wget git -y &&\
+apt install clang curl wget -y &&\
 echo "deb [trusted=yes arch=all] https://yadominjinta.github.io/files/ termux extras" >> $PREFIX/etc/apt/sources.list &&\
 apt update &&\
 apt install atilo-cn -y &&\
