@@ -4,5 +4,5 @@
 
 在termux中输入以下命令开始安装
 ```shellscript
-curl -fsSL https://github.com/CrazyHer/Deploy-codeserver-on-termux/releases/download/0.1/start.sh | sh
+curl -fsSL https://raw.githubusercontent.com/CrazyHer/Deploy-codeserver-on-termux/master/start.sh | sh
 ```
