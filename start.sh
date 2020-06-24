@@ -9,7 +9,7 @@ apt install atilo-cn -y &&\
 atilo pull ubuntu ||echo "安装失败或atilo ubuntu已安装，脚本仍将继续......"
 echo "已通过atilo成功安装Ubuntu子系统在termux内" &&\
 echo "部署后续脚本..." &&\
-curl -fO https://raw.githubusercontent.com/CrazyHer/Deploy-codeserver-on-termux/master/continue.sh ~/.atilo/ubuntu/root/ &&\
+curl https://raw.githubusercontent.com/CrazyHer/Deploy-codeserver-on-termux/master/continue.sh >> ~/.atilo/ubuntu/root/ &&\
 chmod 777 ~/.atilo/ubuntu/root/continue.sh &&\
 cp ~/.atilo/ubuntu/root/.bashrc ~/.atilo/ubuntu/root/.bashrcbak &&\
 cat "~/continue.sh">> ~/.atilo/ubuntu/root/.bashrc &&\
