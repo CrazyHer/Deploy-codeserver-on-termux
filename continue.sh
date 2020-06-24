@@ -14,7 +14,7 @@ read code_password
 echo "设置成功，你的访问密码是 $code_password " &&\
 echo 'bind-addr: 127.0.0.1:2333' >> ~/.config/code-server/config.yaml &&\
 echo 'auth: password' >>~/.config/code-server/config.yaml &&\
-echo password: $code_password >>~/.config/code-server/config.yaml &&\
+echo "password: $code_password" >>~/.config/code-server/config.yaml &&\
 echo 'cert: false'>>~/.config/code-server/config.yaml &&\
 apt install nginx -y &&\
 rm /etc/nginx/sites-enabled/default &&\
