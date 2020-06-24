@@ -4,7 +4,8 @@ cd ~ &&\
 apt update &&\
 apt install clang vim curl wget git -y &&\
 echo "deb [trusted=yes arch=all] https://yadominjinta.github.io/files/ termux extras" >> $PREFIX/etc/apt/sources.list &&\
-pkg in atilo-cn -y &&\
+apt update &&\
+apt install atilo-cn -y &&\
 atilo pull ubuntu &&\
 echo '请设置code-server的访问密码，回车确认：' &&\
 read code_password &&\
