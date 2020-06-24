@@ -6,7 +6,7 @@ curl -sL https://deb.nodesource.com/setup_12.x | bash - &&\
 apt-get install -y nodejs &&\
 npm install -g yarn &&\
 curl -fOL https://github.com/cdr/code-server/releases/download/v3.4.1/code-server_3.4.1_arm64.deb &&\
-dpkg -i code-server_3.4.1_arm64.deb ||echo '继续安装失败！' && exit 0
+dpkg -i code-server_3.4.1_arm64.deb ||echo '继续安装失败！你可以输入./continue.sh重新继续安装' && exit 0
 rm -rf ~/.config/code-server
 mkdir ~/.config/code-server
 echo '请设置code-server的访问密码，回车确认：' 
