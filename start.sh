@@ -12,7 +12,7 @@ echo "部署后续脚本..." &&\
 curl https://raw.githubusercontent.com/CrazyHer/Deploy-codeserver-on-termux/master/continue.sh >> ~/.atilo/ubuntu/root/continue.sh &&\
 chmod 777 ~/.atilo/ubuntu/root/continue.sh &&\
 cp ~/.atilo/ubuntu/root/.bashrc ~/.atilo/ubuntu/root/.bashrcbak &&\
-cat '~/continue.sh'>> ~/.atilo/ubuntu/root/.bashrc &&\
+echo '~/continue.sh'>> ~/.atilo/ubuntu/root/.bashrc &&\
 echo "现在将通过atilo run ubuntu进入ubuntu子系统继续安装" &&\
 atilo run ubuntu ||\
 echo "安装失败！"
