@@ -1,3 +1,4 @@
+#!/bin/bash
 ##Created by @CrazyHer
 echo "开始安装..."
 cd ~ &&\
