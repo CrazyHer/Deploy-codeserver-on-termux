@@ -1,3 +1,4 @@
+#!/bin/bash
 ##Created by @CrazyHer
 echo '继续进行安装...' &&\
 cd ~ &&\
